@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main__header {
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__header img {
+  width: 120px;
+}
+
+.main__menu {
+  display: flex;
+}
