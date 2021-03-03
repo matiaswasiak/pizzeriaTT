@@ -7,12 +7,17 @@
     <title>Pizzería TITO</title>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat: 400,800"
+      href="https://fonts.googleapis.com/css?family=Montserrat: 400,500,800"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     />
     <link rel="stylesheet" href="normalize.css"/>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- HEADER SECTION -->
     <header class="header">
       <div class="inner_header">
         <div class="logo_container">
@@ -25,38 +30,31 @@
         </ul>
       </div>
     </header>
-    <section>
-      <article>
-        <img
-          src="https://irp-cdn.multiscreensite.com/e6a79761/DESKTOP/jpg/1829867-banner.jpg"
-          alt="banner"
-        />
-        <h1>¿Buscas una pizzería en Oberá?</h1>
-      </article>
-      <article>
-        <div>
-          <h2>Servicio de alta calidad</h2>
+
+    <!-- BANNER SECTION -->
+    <section class="banner">
+      <div class="banner_container">
+        <div class="banner_content">
+          <span>¿BUSCAS UNA PIZZERÍA EN OBERÁ?</span>
+          <h1>PIZZERÍA <span>TITO</span></h1>
+          <hr />
+          <h2>SERVICIO DE ALTA CALIDAD</h2>
           <p>
             ¡Bienvenido a nuestra página web! Somos
-            <strong>Pizzería Tito</strong>, un establecimiento que se destaca
-            por contar con un grupo de cocineros de alto nivel para ofrecer las
-            más exquisitas <strong>pizzas</strong> y <strong>empanadas</strong>.
-            <br />
+            <em>PIZZERÍA <span>TITO</span></em
+            >, un establecimiento que se destaca por contar con un grupo de
+            cocineros de alto nivel para ofrecer las más exquisitas
+            <span>pizzas</span> y <span>empanadas</span> <br />
             Además, disponemos de un espacio sumamente acogedor, ideal para
             compartir un momento agradable con amigos y familiares.
           </p>
+
+          <a href="#" class="btn-one">UBICACION</a>
+          <a href="#" class="btn-two">CONTACTANOS!</a>
         </div>
-        <div>
-          <img
-            src="https://irp-cdn.multiscreensite.com/e6a79761/DESKTOP/jpg/1829877-home-v1-1.jpg"
-            alt="familia"
-          />
-        </div>
-      </article>
+      </div>
     </section>
-    <div>
-      <p>¡Marcamos la diferencia <strong>en el rubro!</strong></p>
-    </div>
+
     <section>
       <div>
         <img
@@ -77,27 +75,143 @@
         </p>
       </div>
     </section>
-    <section>
-      <div>
-        <a href="#">¿Dónde estamos?</a>
-      </div>
-      <div>
-        <ul>
-          <li>Dirección: R.Singer y Rivadavia</li>
-          <li>E-mail: pizzeriatito@hotmail.com</li>
-          <li>Teléfono: (03755)42 2141</li>
-        </ul>
+
+    <!-- SERVICES SECTION -->
+    <section class="services_section">
+      <div class="inner_width">
+        <h1 class="section_title">Nuestros Servicios</h1>
+        <div class="border"></div>
+        <div class="services_container">
+          <div class="service_box">
+            <div class="service_icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="service_title">Web Designs</div>
+            <div class="service_desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident culpa velit, odit dolores quo consectetur harum
+              voluptatibus! Porro, perferendis dolore?
+            </div>
+          </div>
+          <div class="service_box">
+            <div class="service_icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="service_title">Web Designs</div>
+            <div class="service_desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident culpa velit, odit dolores quo consectetur harum
+              voluptatibus! Porro, perferendis dolore?
+            </div>
+          </div>
+          <div class="service_box">
+            <div class="service_icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="service_title">Web Designs</div>
+            <div class="service_desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident culpa velit, odit dolores quo consectetur harum
+              voluptatibus! Porro, perferendis dolore?
+            </div>
+          </div>
+          <div class="service_box">
+            <div class="service_icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="service_title">Web Designs</div>
+            <div class="service_desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident culpa velit, odit dolores quo consectetur harum
+              voluptatibus! Porro, perferendis dolore?
+            </div>
+          </div>
+          <div class="service_box">
+            <div class="service_icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="service_title">Web Designs</div>
+            <div class="service_desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident culpa velit, odit dolores quo consectetur harum
+              voluptatibus! Porro, perferendis dolore?
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-      <footer class="footer">
-        <div class="inner_footer">
-          <p class="copyright">Todos los derechos reservados &copy;2020 PIZZERÍA TITO </p>
-          <ul class="navigation_footer">
-            <a href="#"><li>Aviso Legal</li></a>
-            <a href="#"><li>Política de Privacidad</li></a>
-            <a href="#"><li>Política de Cookies</li></a>
-          </ul>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+      <div class="contact_content">
+        <h2>Contactanos</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto in
+          voluptatibus dolor dolorum voluptas magni error fugiat necessitatibus
+          esse consequuntur.
+        </p>
+      </div>
+      <div class="contact_container">
+        <div class="contact_info">
+          <div class="contact_box">
+            <div class="contact_icon">
+              <i class="fa fa-map-marked" aria-hidden="true"></i>
+            </div>
+            <div class="contact_text">
+              <h3>Direccion</h3>
+              <p>R.Singer y Rivadavia</p>
+            </div>
+          </div>
+          <div class="contact_box">
+            <div class="contact_icon">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="contact_text">
+              <h3>Telefono</h3>
+              <p>(03755)42 2141</p>
+            </div>
+          </div>
+          <div class="contact_box">
+            <div class="contact_icon">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="contact_text">
+              <h3>E-mail</h3>
+              <p>pizzeriatito@hotmail.com</p>
+            </div>
+          </div>
         </div>
-      </footer>
+        <div class="contact_form">
+          <form action="">
+            <h2>Enviar Mensaje</h2>
+            <div class="input_box">
+              <input type="text" name="" required="required" />
+              <span>Nombre completo</span>
+            </div>
+            <div class="input_box">
+              <input type="text" name="" required="required" />
+              <span>Email</span>
+            </div>
+            <div class="input_box">
+              <textarea type="text" name="" required="required"></textarea>
+              <span>Escribe tu mensaje...</span>
+            </div>
+            <div class="input_box">
+              <input type="submit" name="" value="Enviar" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy;2020 PIZZERÍA TITO</p>
+      <p>Todos los derechos reservados</p>
+      <ul>
+        <li>Aviso Legal</li>
+        <li>Política de Privacidad</li>
+        <li>Política de Cookies</li>
+      </ul>
+    </footer>
   </body>
 </html>
