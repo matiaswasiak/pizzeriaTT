@@ -185,6 +185,76 @@
   color: #e12229;
 }
 
+/* ABOUT SECTION */
+.about {
+  background: url("https://irp-cdn.multiscreensite.com/e6a79761/DESKTOP/jpg/1829880-home-v1-2.jpg")
+    no-repeat left;
+  background-size: 55%;
+  background-color: #e8e8e8;
+  overflow: hidden;
+  padding: 100px 20px;
+  border: 80px solid #e8e8e8;
+}
+
+.about_section {
+  width: 55%;
+  float: right;
+  background-color: #e8e8e8;
+  padding: 140px;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about_section h2 {
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.about_section h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.about_text {
+  color: #101010;
+  text-align: justify;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  font-size: 16px;
+  letter-spacing: 1.5;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1200px) {
+  .about_section {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+
+  .about_section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    padding: 0;
+  }
+  .about_section {
+    padding: 60px;
+  }
+}
+
 /* SERVICES SECTION */
 .services_section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
@@ -286,12 +356,12 @@
   background: linear-gradient(rgba(119, 20, 23), rgb(119, 20, 23, 0.9));
 }
 
-.contact .contact_content {
+.contact_content {
   max-width: 800px;
   text-align: center;
 }
 
-.contact .contact_content h2 {
+.contact_content h2 {
   color: #fff;
   padding-bottom: 30px;
   padding-top: 20px;
@@ -301,7 +371,7 @@
   letter-spacing: 3px;
 }
 
-.contact .contact_content p {
+.contact_content p {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
@@ -320,19 +390,19 @@
   margin: 30px;
 }
 
-.contact_container .contact_info {
+.contact_info {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-.contact_container .contact_info .contact_box {
+.contact_box {
   display: flex;
   position: relative;
   padding: 20px 0;
 }
 
-.contact_container .contact_info .contact_box .contact_icon {
+.contact_icon {
   background-color: #fff;
   min-width: 60px;
   height: 60px;
@@ -343,7 +413,7 @@
   font-size: 22px;
 }
 
-.contact_container .contact_info .contact_box .contact_text {
+.contact_text {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
@@ -353,7 +423,7 @@
   text-transform: uppercase;
 }
 
-.contact_container .contact_info .contact_box .contact_text h3 {
+.contact_text h3 {
   font-weight: 500;
   color: #edbe03;
 }
@@ -370,14 +440,14 @@
   font-weight: 500;
 }
 
-.contact_form .input_box {
+.input_box {
   position: relative;
   width: 100%;
   margin-top: 10px;
 }
 
-.contact_form .input_box input,
-.contact_form .input_box textarea {
+.input_box input,
+.input_box textarea {
   width: 100%;
   padding: 5px 0;
   font-size: 16px;
@@ -388,7 +458,7 @@
   resize: none;
 }
 
-.contact_form .input_box span {
+.input_box span {
   position: absolute;
   left: 0;
   padding: 5px 0;
@@ -399,16 +469,16 @@
   color: #666;
 }
 
-.contact_form .input_box input:focus ~ span,
-.contact_form .input_box input:valid ~ span,
-.contact_form .input_box textarea:focus ~ span,
-.contact_form .input_box textarea:valid ~ span {
+.input_box input:focus ~ span,
+.input_box input:valid ~ span,
+.input_box textarea:focus ~ span,
+.input_box textarea:valid ~ span {
   color: #edbe03;
   font-size: 12px;
   transform: translateY(-20px);
 }
 
-.contact_form .input_box input[type="submit"] {
+.input_box input[type="submit"] {
   width: 100px;
   background-color: #edbe03;
   color: #fff;
@@ -427,11 +497,11 @@
     flex-direction: column;
   }
 
-  .contact_container .contact_info {
+  .contact_info {
     margin-bottom: 40px;
   }
 
-  .contact_container .contact_info,
+  .contact_info,
   .contact_form {
     width: 100%;
   }
