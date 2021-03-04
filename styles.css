@@ -352,8 +352,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #771417;
-  background: linear-gradient(rgba(119, 20, 23), rgb(119, 20, 23, 0.9));
+  background: linear-gradient(180deg, rgb(119, 20, 23) 0%, rgb(119, 20, 23) 0%, rgba(16, 16, 16, 1) 94%);
 }
 
 .contact_content {
@@ -564,20 +563,29 @@ footer {
   margin-top: 20px;
   display: flex;
 }
-
-.social_m img {
-  width: 36px;
-  height: 36px;
+.social_m i {
+ font-size: 18px;
+ padding-left: 2px; 
 }
 
 .social_m label {
-  margin-top: 10px;
+  margin-top: 0px;
   margin-left: 20px;
   color: #e6e6e6;
 }
 
 .social_m label a {
   color: #e6e6e6;
+}
+
+.icon-footer i {
+  min-width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 16px;
 }
 
 .container-footer-low {
