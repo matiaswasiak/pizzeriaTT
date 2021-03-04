@@ -5,7 +5,6 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-size: 62.5%; /** reset para REMS -62.5% = 10px de 16px **/
 }
 
 
@@ -73,44 +72,123 @@
 }
 
 /** Footer **/
-.footer {
-  text-align: center;
+footer{
   width: 100%;
-  height: 100%;
-  display: block;
   background-color: #101010;
+  color: white;   
+  font-family: 'Montserrat';
 }
-.inner_footer {
-  width: 1000px;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
+.footer{
+  max-width: 1000px;
+  display: flex;
+  margin: auto;
+  padding: 20px;
+  justify-content: space-between;  
 }
-.copyright {
+.container-footer{
+  width: 100%;
+  margin: auto;
+  max-width: 1000px;
+  padding: 40px 40px 10px 40px ;
+}
+
+.container-body{
+  display: flex;
+  justify-content: space-between;
+}
+
+.colum_01{
+  max-width: 400px;
+}
+
+.colum_01 h1{
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.colum_01 p{
+  font-size: 14px;
+  color: #e6e6e6;
+  margin-top: 20px;
+}
+
+.colum_02 {
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.colum_02 h1{
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.social_m{
+  margin-top: 20px;
+  display: flex;
+}
+
+.social_m img{
+  width: 36px;
+  height: 36px;
+}
+
+.social_m label{
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #e6e6e6;
+}
+
+.social_m label a {
+  color: #e6e6e6;
+}
+
+.container-footer-low{
+  width: 100%;  
+  background: #101010;
+}
+.copy a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
   float: right;
+  font-size: 15px;
+}
+.info a{
+  text-decoration: none;
   color: white;
-  font-family: "Montserrat";
-  font-size: 16px;
-  padding: 30px 0 15px 0;
+  font-size: 15px;
 }
-.navigation_footer {
-  padding-bottom: 20px;
-  text-align: left;
-}
-.navigation_footer a li {
-  padding: 30px 5px 15px 5px;
-}
-.navigation_footer a li {
-  color: white;
-  font-family: "Montserrat";
-  font-size: 16px;
-  display: table-cell;
-  vertical-align: middle;
-}
-.navigation_footer li:hover {
-  color: #e21e25;
+
+.navigation_footer a:hover {
+  color: #e12229;
   transition-duration: 0.6s;  
 }
+
+@media screen and (max-width: 1000px){
+  
+  .container-body{
+      flex-wrap: wrap;
+  }
+  
+  .colum_01{
+      max-width: 100%;
+  }
+  
+  .colum_02{
+      margin: 40px 0 40px 0;
+  }
+  .copy {
+    margin-right: 15px;
+  }
+}
+.line-content hr{
+  background: linear-gradient(to right, green, white, red);
+  border: 0 solid #10101054;
+  height: 1px;
+}
+
 /* BANNER STYLES */
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
