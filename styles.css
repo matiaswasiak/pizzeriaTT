@@ -1,43 +1,48 @@
 /** Global **/
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 450px;
+}
+
+img {
+  max-width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 /* HEADER STYLES */
 .header {
   width: 100%;
-  height: 80px;
   display: block;
   background-color: #101010;
-  position: fixed;
+  position: static;
   z-index: 2;
+  padding: 1.1em;
 }
 
 .inner_header {
-  width: 1000px;
-  height: 100%;
+  max-width: 1000px;
   display: block;
   margin: 0 auto;
-}
-
-.logo_container {
-  height: 100%;
-  display: table;
-  float: left;
 }
 
 .logo_container h1 {
   color: #006931;
   height: 100%;
-  display: table-cell;
-  vertical-align: middle;
   font-size: 32px;
   font-weight: 200;
 }
@@ -47,18 +52,46 @@
   font-weight: 800;
 }
 
+.inner_header  {
+  flex-direction: column;
+  display: flex;
+  text-align:center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner_header ul a {
+  margin-top: 2em;
+}
+
+.inner_header ul a:first-child {
+  margin-top: 0;
+}
+
+
+@media screen and (min-width:768px) {
+  .header {
+    position: fixed;
+  }
+  .inner_header  {
+      flex-direction: row;
+  }
+  .inner_header ul a {
+      margin-bottom: 0px;
+      margin-top: 0;
+  }
+}
+
 /** Navigation **/
 
 .navigation {
-  float: right;
+  display: flex;
   height: 100%;
+  flex-direction: column;
 }
 
 .navigation a {
   height: 100%;
-  display: table;
-  float: left;
-  padding: 0 20px;
 }
 
 .navigation a:last-child {
@@ -66,12 +99,21 @@
 }
 
 .navigation a li {
-  display: table-cell;
-  vertical-align: middle;
   height: 100%;
   color: white;
   font-size: 16px;
 }
+
+@media screen and (min-width:768px) {
+  .navigation  {
+    flex-direction: row;
+  }
+
+  .navigation a {
+    padding: 0 20px;
+  }
+}
+
 
 /* BANNER STYLES */
 .banner {
@@ -79,14 +121,15 @@
     url("https://wallpaperaccess.com/full/866645.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  padding-left: 20%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
 }
 
 .banner_content {
   color: #fff;
-  width: 55%;
-  padding-top: 170px;
+  max-width: 1000px;
 }
 
 .banner_content span {
@@ -154,10 +197,13 @@
 }
 
 .banner_content a {
+  flex-grow: 1;
+  text-align: center;
   margin-right: 20px;
 }
 
 .banner_content .btn-one {
+  margin-bottom: 1rem;
   padding: 15px 35px;
   background-color: rgba(0, 0, 0, 0.527);
   border: 2px solid #006931;
@@ -187,6 +233,36 @@
   border: 2px solid #e12229;
   color: #e12229;
 }
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+@media screen and (min-width:768px) {
+  .banner {
+    height: 100vh;
+    display: flex;
+    padding-top: 0;
+  }
+
+  .banner_content a  {
+    flex-grow: 0;
+  }
+
+  .banner_content .btn-one {
+    margin-bottom: 0;
+  }
+
+  .buttons {
+    justify-content: flex-start;
+  }
+
+}
+
+
 
 /* ABOUT SECTION */
 .about {
@@ -299,15 +375,29 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: row;
 }
 
 .service_box {
-  max-width: 33.33%;
+  max-width: 100%;
   padding: 10px;
   text-align: center;
   color: #fff;
   cursor: pointer;
 }
+
+
+@media screen and (min-width:768px) {
+  .service_box {
+    max-width: 33.3%;
+  }
+
+  .services_container {
+    flex-direction: row;
+  }
+
+}
+
 
 .service_icon {
   display: inline-block;
