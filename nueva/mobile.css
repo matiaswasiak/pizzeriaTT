@@ -5,7 +5,7 @@
   --oscuro: #101010;
   --parrafos: #e3e3e3;
   --fondo2: #e8e8e8;
-  --fondoBotones: rgba(0, 0, 0, 0.527);
+  --fondoBotones: rgba(16, 16, 16, 0.5);
   --sombra: rgba(0, 0, 0, 0.25);
 }
 
@@ -68,9 +68,88 @@ header.header {
   display: none;
 }
 
-/* MAIN STYLES */
-.main_container p {
+/* BANNER STYLES */
+
+.banner {
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+  text-align: center;
+}
+
+.banner-image {
+  background: linear-gradient(rgb(0 0 0 / 75%), rgb(0 0 0 / 75%)),
+    url(../assets/main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.banner p {
+  color: var(--parrafos);
   font-size: 1.2rem;
+}
+
+.banner h1 {
+  color: var(--secundario);
+  font-size: 3.6rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+}
+
+.banner h1 span {
+  color: var(--primario);
+  font-weight: 600;
+}
+
+.banner hr {
+  width: 18rem;
+  border: 0.1rem solid var(--parrafos);
+  margin: 1.5rem auto;
+}
+
+.banner h2 {
+  color: var(--parrafos);
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.banner p {
+  font-size: 1.2rem;
+}
+
+.text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 500;
+}
+
+.buttons .btn-two {
+  margin: 0 3rem;
+  margin-bottom: 1rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  color: var(--parrafos);
+  border: 0.2rem solid var(--primario);
+  background-color: var(--primario);
+}
+
+.buttons .btn-one {
+  margin: 0 3rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5rem;
+  font-size: 1.7rem;
+  color: var(--secundario);
+  border: 0.2rem solid var(--secundario);
+  background-color: var(--fondoBotones);
 }
 
 img {
@@ -110,65 +189,6 @@ hr {
 }
 
 /* BUTTONS */
-
-.buttons {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-weight: 500;
-}
-
-.buttons .btn-two {
-  margin: 0.9rem 6rem;
-  padding: 1.5rem 2.5rem;
-  border-radius: 5rem;
-  font-size: 1.7rem;
-  color: var(--parrafos);
-  border: 0.2rem solid var(--primario);
-  background-color: var(--primario);
-}
-
-.buttons .btn-one {
-  margin: 0.9rem 6rem;
-  padding: 1.5rem 2.5rem;
-  border-radius: 5rem;
-  font-size: 1.7rem;
-  color: var(--secundario);
-  border: 0.2rem solid var(--secundario);
-  background-color: var(--fondoBotones);
-}
-
-/* BANNER */
-
-.banner {
-  text-align: center;
-  padding: 10rem 4rem;
-}
-
-.banner-image {
-  background: linear-gradient(rgb(0 0 0 / 75%), rgb(0 0 0 / 75%)),
-    url(../assets/main.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.banner p {
-  margin: 2.5rem 0;
-  color: var(--parrafos);
-  font-size: 1.4rem;
-}
-
-.banner h2 {
-  color: var(--parrafos);
-  font-weight: 300;
-  font-size: 1.7rem;
-  margin: 2.6rem 0;
-}
-
-.banner hr {
-  border: 1px solid var(--parrafos);
-  margin: 1.5rem auto;
-}
 
 /* ABOUT */
 
