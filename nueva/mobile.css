@@ -50,7 +50,7 @@ header.header {
 
 .inner_header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 2rem 0;
   position: fixed;
   background-color: var(--oscuro);
