@@ -4,11 +4,11 @@
   --secundario: #02662d;
   --oscuro: #101010;
   --parrafos: #e3e3e3;
-  --fondo: #eeeeee
+  --fondo: #eeeeee;
   --fondo2: #e8e8e8;
   --fondoBotones: rgba(16, 16, 16, 0.5);
   --sombra: rgba(0, 0, 0, 0.25);
-  --font_texto: 1.4rem
+  --font_texto: 1.4rem;
 }
 
 html {
@@ -16,6 +16,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
+  min-width: 380px;
 }
 
 *,
@@ -83,7 +84,7 @@ header.header {
     url(../assets/main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 93vh;
+  height: 100vh;
 }
 
 .banner p {
@@ -147,6 +148,7 @@ header.header {
 
 .buttons .btn-one {
   margin: 0 3rem;
+  margin-bottom: 6rem;
   padding: 1.5rem 2.5rem;
   border-radius: 5rem;
   font-size: 1.7rem;
@@ -170,7 +172,7 @@ header.header {
 
 .about_container {
   margin: 5rem 3rem;
-  color: var(--fondo2);
+  color: var(--oscuro);
   text-align: center;
   border-radius: 0.5rem;
   box-shadow: 0.3rem 0.3rem 3rem 0.5rem var(--sombra);
@@ -182,7 +184,7 @@ header.header {
 
 .about_content p {
   font-size: var(--font_texto);
-  padding: 0.7rem 0;
+  padding: 1rem 0;
 }
 
 .about_content h2 {
@@ -190,70 +192,64 @@ header.header {
   font-weight: 600;
 }
 
+.about_content hr {
+  margin: 0 auto;
+  width: 90%;
+  border: 0.1rem solid black;
+}
+
 .about_info {
   padding-bottom: 4rem;
 }
 
-.about hr {
-  width: 90%;
-}
-
-/* --------------------------------------------------- */
-
-img {
-  max-width: 100%;
-}
-
-h2 {
-  font-size: 2.2rem;
-  font-weight: 500;
-}
-
-h3 {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-p {
-  line-height: 1.8rem;
-  font-size: 1.6rem;
-  font-weight: 300;
-}
-
-body {
-  min-width: 380px;
-}
-
-hr {
-  width: 27rem;
-  padding: 0;
-  margin: 1.5rem auto;
-  border: 1px solid var(--oscuro);
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* SERVICES SECTION */
-
+/* SERVICES STYLES */
 .services {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 5rem 0;
 }
 
-.services p {
-  margin-bottom: 0.7rem;
-}
-
-.services hr {
-  margin-top: 0;
-}
-
-.services img {
-  margin: 1.2rem 0;
+.services_content {
+  background-color: var(--fondo2);
+  margin: 0 3rem;
   border-radius: 0.5rem;
+}
+
+.images_services {
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+
+.images_services img {
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 0.4rem;
+}
+
+.services_text p {
+  padding: 1rem;
+  padding-top: 3rem;
+  color: black;
+  font-size: var(--font_texto);
+}
+
+.services_text h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.services_text hr {
+  margin: 0 auto;
+  width: 73%;
+  border: 0.1rem solid black;
+}
+
+#servicios1,
+#servicios2,
+#servicios3 {
+  height: 16rem;
+  padding: 0 4rem;
 }
 
 #servicios4,
@@ -267,15 +263,11 @@ hr {
   background-size: cover;
 }
 
-.services_content {
-  background-color: var(--fondo2);
-  padding: 3rem 4rem;
-  border-radius: 0.5rem;
-}
-
+/* Estas lineas de código hay que revisarlas a la hora de hacer para desktop y tablet. */
+/* 
 .services_display {
   display: none;
-}
+} */
 
 /* CONTACT SECTION */
 
