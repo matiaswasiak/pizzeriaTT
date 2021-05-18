@@ -1,303 +1,321 @@
 /* Global */
 :root {
-    --primario: #e12229;
-    --secundario: #017e3b;
-    --oscuro: #101010;
-    --parrafos: #E3E3E3;
-    --fondo2: #e8e8e8;
-    --fondoBotones: rgba(0, 0, 0, 0.527);
-    --sombra: rgba(0, 0, 0, 0.25);
+  --primario: #e12229;
+  --secundario: #02662d;
+  --oscuro: #101010;
+  --parrafos: #e3e3e3;
+  --fondo2: #e8e8e8;
+  --fondoBotones: rgba(0, 0, 0, 0.527);
+  --sombra: rgba(0, 0, 0, 0.25);
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 
-*, *:before, *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    text-decoration: none;
-    list-style: none;
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-img {
-    max-width: 100%;
-}
-
+/* HEADER STYLES */
 h1 {
-    padding: 0;
-    color: var(--primario);
-    font-size: 3.2rem;
-    font-weight: 600;
-    letter-spacing: 0.2rem;
+  color: var(--secundario);
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  position: relative;
+  left: 30px;
 }
 
 h1 span {
-    color: var(--secundario);
+  color: var(--primario);
+  font-weight: 600;
+}
+
+header.header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0;
+}
+
+.inner_header {
+  display: flex;
+}
+
+.navigation {
+  display: none;
+}
+
+/* MAIN STYLES */
+
+img {
+  max-width: 100%;
 }
 
 h2 {
-    font-size: 2.2rem;
-    font-weight: 500;
+  font-size: 2.2rem;
+  font-weight: 500;
 }
 
 h3 {
-    font-size: 2rem;
-    font-weight: 500;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 p {
-    line-height: 1.8rem;
-    font-size: 1.6rem;
-    font-weight: 300;
+  line-height: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 
 body {
-    min-width: 380px;
+  min-width: 380px;
 }
 
 hr {
-    width: 27rem;
-    padding: 0;
-    margin: 1.5rem auto;
-    border: 1px solid var(--oscuro);
+  width: 27rem;
+  padding: 0;
+  margin: 1.5rem auto;
+  border: 1px solid var(--oscuro);
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* BUTTONS */
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 500;
 }
 
 .buttons .btn-two {
-    margin: .9rem 6rem;
-    padding: 1.5rem 2.5rem;
-    border-radius: 5rem;
-    font-size: 1.7rem;
-    color: var(--parrafos);
-    border: 0.2rem solid var(--primario);
-    background-color: var(--primario);
+  margin: 0.9rem 6rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5rem;
+  font-size: 1.7rem;
+  color: var(--parrafos);
+  border: 0.2rem solid var(--primario);
+  background-color: var(--primario);
 }
 
 .buttons .btn-one {
-    margin: .9rem 6rem;
-    padding: 1.5rem 2.5rem;
-    border-radius: 5rem;
-    font-size: 1.7rem;
-    color: var(--secundario);
-    border: 0.2rem solid var(--secundario);
-    background-color: var(--fondoBotones);
+  margin: 0.9rem 6rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 5rem;
+  font-size: 1.7rem;
+  color: var(--secundario);
+  border: 0.2rem solid var(--secundario);
+  background-color: var(--fondoBotones);
 }
-
 
 /* HEADER */
 
 .header {
-    width: 100%;
-    margin: 0 auto;
-    background-color: var(--oscuro);
-    padding: 1.1rem 1.1rem 0 1.1rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--oscuro);
+  padding: 1.1rem 1.1rem 0 1.1rem;
 }
 
 .inner_header {
-    text-align: center;
+  text-align: center;
 }
 
 .inner_header li {
-    padding: 0;
-    color: #fff;
-    font-size: 1.6rem;
-    margin-top: 3rem;
+  padding: 0;
+  color: #fff;
+  font-size: 1.6rem;
+  margin-top: 3rem;
 }
 
 .inner_header li:last-child {
-    padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
-
 
 /* BANNER */
 
 .banner {
-    text-align: center;
-    padding: 10rem 4rem;
+  text-align: center;
+  padding: 10rem 4rem;
 }
 
 .banner-image {
-    background: linear-gradient(rgb(0 0 0 / 75%), rgb(0 0 0 / 75%)), url(../assets/main.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: linear-gradient(rgb(0 0 0 / 75%), rgb(0 0 0 / 75%)),
+    url(../assets/main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner p {
-    margin: 2.5rem 0;
-    color: var(--parrafos);
-    font-size: 1.4rem;
+  margin: 2.5rem 0;
+  color: var(--parrafos);
+  font-size: 1.4rem;
 }
 
 .banner h2 {
-    color: var(--parrafos);
-    font-weight: 300;
-    font-size: 1.7rem;
-    margin: 2.6rem 0;
+  color: var(--parrafos);
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin: 2.6rem 0;
 }
 
 .banner hr {
-    border: 1px solid var(--parrafos);
-    margin: 1.5rem auto;
+  border: 1px solid var(--parrafos);
+  margin: 1.5rem auto;
 }
-
 
 /* ABOUT */
 
 .about {
-    padding: 4rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .about img {
-    border-radius: .5rem .5rem 0 0;
-    margin-bottom: 2rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-bottom: 2rem;
 }
 
 .about p {
-    padding: .7rem 0;
+  padding: 0.7rem 0;
 }
 
-.about_info  {
-    padding-bottom: 2rem;
+.about_info {
+  padding-bottom: 2rem;
 }
 
 .about_container {
-    text-align: center;
-    background-color: var(--fondo2);
-    border-radius: .5rem;
-    box-shadow: .3rem .3rem 3rem .5rem var(--sombra);
+  text-align: center;
+  background-color: var(--fondo2);
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 3rem 0.5rem var(--sombra);
 }
 
 .about_content {
-    margin: 0 5rem;
+  margin: 0 5rem;
 }
 
 .about hr {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 /* SERVICES SECTION */
 
 .services {
-    text-align: center;
-    padding: 4rem 2rem;
+  text-align: center;
+  padding: 4rem 2rem;
 }
 
 .services p {
-    margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
 }
 
-.services hr{
-    margin-top: 0;
+.services hr {
+  margin-top: 0;
 }
 
 .services img {
-    margin: 1.2rem 0;
-    border-radius: .5rem;
+  margin: 1.2rem 0;
+  border-radius: 0.5rem;
 }
 
 #servicios4,
 #servicios5 {
-    display: none;
+  display: none;
 }
 
-.services_image  {
-    background: url(../assets/services.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.services_image {
+  background: url(../assets/services.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services_content {
-    background-color: var(--fondo2);
-    padding: 3rem 4rem;
-    border-radius: .5rem;
+  background-color: var(--fondo2);
+  padding: 3rem 4rem;
+  border-radius: 0.5rem;
 }
 
 .services_display {
-    display: none;
+  display: none;
 }
 
 /* CONTACT SECTION */
 
 .contact {
-    text-align: center;
-    padding: 3rem 2rem;
+  text-align: center;
+  padding: 3rem 2rem;
 }
 
 .contact hr {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .contact_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .contact_content {
-    flex-grow: 1;
-    padding: 1rem 2rem;
+  flex-grow: 1;
+  padding: 1rem 2rem;
 }
 
 .contact_icon {
-    min-width: 6rem;
-    font-size: 2rem;
-    color: var(--primario);
-    padding: 0 2rem;
+  min-width: 6rem;
+  font-size: 2rem;
+  color: var(--primario);
+  padding: 0 2rem;
 }
 
 .contact_total {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 .map {
-    box-shadow: .5rem .3rem 3rem .5rem var(--sombra)
+  box-shadow: 0.5rem 0.3rem 3rem 0.5rem var(--sombra);
 }
-
 
 /* FOOTER */
 
 .footer {
-    background-color: var(--oscuro);
-    color: var(--parrafos);
-    margin: 0;
-    text-align: center;
-    padding: 1rem 0;    
+  background-color: var(--oscuro);
+  color: var(--parrafos);
+  margin: 0;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 .footer_content h2 {
-    color: var(--primario);
-    font-weight: 300;
-    margin: 1rem 0;
+  color: var(--primario);
+  font-weight: 300;
+  margin: 1rem 0;
 }
 
 .footer_content h2 span {
-    color: var(--secundario);
+  color: var(--secundario);
 }
 
-
 .copy {
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
 }
 
 .copy a {
-    color: var(--primario);
+  color: var(--primario);
 }
