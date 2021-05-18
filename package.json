@@ -1,0 +1,25 @@
+{
+  "name": "pizzeriatt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiaswasiak/pizzeriaTT.git"
+  },
+  "author": "Perfect",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matiaswasiak/pizzeriaTT/issues"
+  },
+  "homepage": "https://github.com/matiaswasiak/pizzeriaTT#readme",
+  "devDependencies": {
+    "eslint": "^7.25.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

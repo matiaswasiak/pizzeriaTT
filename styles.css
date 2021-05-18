@@ -117,8 +117,7 @@ img {
 
 /* BANNER STYLES */
 .banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
-    url("https://wallpaperaccess.com/full/866645.jpg");
+  background: url("https://irp-cdn.multiscreensite.com/e6a79761/DESKTOP/jpg/1829880-home-v1-2.jpg")no-repeat left;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
