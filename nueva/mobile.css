@@ -4,9 +4,11 @@
   --secundario: #02662d;
   --oscuro: #101010;
   --parrafos: #e3e3e3;
+  --fondo: #eeeeee
   --fondo2: #e8e8e8;
   --fondoBotones: rgba(16, 16, 16, 0.5);
   --sombra: rgba(0, 0, 0, 0.25);
+  --font_texto: 1.4rem
 }
 
 html {
@@ -69,7 +71,6 @@ header.header {
 }
 
 /* BANNER STYLES */
-
 .banner {
   display: flex;
   align-items: center;
@@ -82,17 +83,17 @@ header.header {
     url(../assets/main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 93vh;
 }
 
 .banner p {
   color: var(--parrafos);
-  font-size: 1.2rem;
+  font-size: var(--font_texto);
 }
 
 .banner h1 {
   color: var(--secundario);
-  font-size: 3.6rem;
+  font-size: 4rem;
   font-weight: 400;
   letter-spacing: 0.15rem;
   margin: 0;
@@ -114,16 +115,15 @@ header.header {
 .banner h2 {
   color: var(--parrafos);
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding-bottom: 2rem;
 }
 
 .banner p {
-  font-size: 1.2rem;
+  font-size: var(--font_texto);
 }
 
 .text {
-  font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
@@ -154,6 +154,51 @@ header.header {
   border: 0.2rem solid var(--secundario);
   background-color: var(--fondoBotones);
 }
+
+/* ABOUT STYLES */
+.about {
+  color: var(--fondo);
+}
+
+.about img {
+  border-radius: 0.4rem 0.4rem 0 0;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.about_container {
+  margin: 5rem 3rem;
+  color: var(--fondo2);
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 3rem 0.5rem var(--sombra);
+}
+
+.about_content {
+  margin: 0 5rem;
+}
+
+.about_content p {
+  font-size: var(--font_texto);
+  padding: 0.7rem 0;
+}
+
+.about_content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.about_info {
+  padding-bottom: 4rem;
+}
+
+.about hr {
+  width: 90%;
+}
+
+/* --------------------------------------------------- */
 
 img {
   max-width: 100%;
@@ -189,42 +234,6 @@ hr {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-/* BUTTONS */
-
-/* ABOUT */
-
-.about {
-  padding: 4rem 2rem;
-}
-
-.about img {
-  border-radius: 0.5rem 0.5rem 0 0;
-  margin-bottom: 2rem;
-}
-
-.about p {
-  padding: 0.7rem 0;
-}
-
-.about_info {
-  padding-bottom: 2rem;
-}
-
-.about_container {
-  text-align: center;
-  background-color: var(--fondo2);
-  border-radius: 0.5rem;
-  box-shadow: 0.3rem 0.3rem 3rem 0.5rem var(--sombra);
-}
-
-.about_content {
-  margin: 0 5rem;
-}
-
-.about hr {
-  margin-top: 0;
 }
 
 /* SERVICES SECTION */
