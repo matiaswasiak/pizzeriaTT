@@ -77,6 +77,7 @@ header.header {
   align-items: center;
   padding: 0 4rem;
   text-align: center;
+  letter-spacing: 0.15rem;
 }
 
 .banner-image {
@@ -96,7 +97,6 @@ header.header {
   color: var(--secundario);
   font-size: 4rem;
   font-weight: 400;
-  letter-spacing: 0.15rem;
   margin: 0;
   padding-top: 1rem;
   margin-bottom: 2rem;
@@ -120,12 +120,9 @@ header.header {
   padding-bottom: 2rem;
 }
 
-.banner p {
-  font-size: var(--font_texto);
-}
-
 .text {
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 
 .buttons {
@@ -301,7 +298,7 @@ header.header {
 
 .contact_content h3,
 .contact_content p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 800;
   text-align: start;
 }
@@ -327,18 +324,21 @@ header.header {
   background-color: var(--oscuro);
   color: var(--parrafos);
   margin: 0;
-  text-align: center;
   padding: 1rem 0;
+  text-align: center;
+  font-size: 1.6rem;
 }
 
 .footer_content h2 {
-  color: var(--primario);
-  font-weight: 300;
+  color: var(--secundario);
+  text-transform: uppercase;
+  font-weight: 400;
   margin: 1rem 0;
 }
 
 .footer_content h2 span {
-  color: var(--secundario);
+  color: var(--primario);
+  font-weight: 600;
 }
 
 .copy {
