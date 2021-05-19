@@ -270,7 +270,6 @@ header.header {
 } */
 
 /* CONTACT SECTION */
-
 .contact {
   text-align: center;
   padding: 3rem 2rem;
@@ -307,7 +306,6 @@ header.header {
 }
 
 /* FOOTER */
-
 .footer {
   background-color: var(--oscuro);
   color: var(--parrafos);
