@@ -70,7 +70,6 @@ header.header {
 }
 
 .navigation {
-    display: none;
     position: fixed;
     flex-direction: column;
     text-align: center;
@@ -78,13 +77,13 @@ header.header {
     margin-top: 6rem;
     width: 100%;
     background-color: var(--oscuro);
-    top: 100%;
+    top: 0%;
     transition: left 0.3s;
 }
 
 .nav_hidden {
     display: block;
-    top: 0%;
+    top: 100%;
 }
 
 .toggle {
