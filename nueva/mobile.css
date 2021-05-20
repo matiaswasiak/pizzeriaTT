@@ -70,29 +70,29 @@ header.header {
 }
 
 .navigation {
-    position: fixed;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-top: 6rem;
-    width: 100%;
-    background-color: var(--oscuro);
-    top: 0%;
-    transition: left 0.3s;
+  position: fixed;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: 6rem;
+  width: 100%;
+  background-color: var(--oscuro);
+  top: 0%;
+  transition: left 0.3s;
 }
 
 .nav_hidden {
-    display: block;
-    top: 100%;
+  display: inline-block;
+  top: 100%;
 }
 
 .toggle {
-    color: var(--fondo2);
-    background: none;
-    border: none;
-    font-size: 2.5rem;
-    display: flex;
-    cursor: pointer;
+  color: var(--fondo2);
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  display: flex;
+  cursor: pointer;
 }
 
 /* BANNER STYLES */
