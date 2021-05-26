@@ -70,83 +70,33 @@ html {
 /* BANNER STYLES */
 .banner {
   display: flex;
-  align-items: center;
-  padding: 0 4rem;
-  text-align: center;
-  letter-spacing: 0.15rem;
-}
-
-.banner-image {
-  background: linear-gradient(rgb(0 0 0 / 75%), rgb(0 0 0 / 75%)),
-    url(../assets/main.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  min-height: 870px;
-}
-
-.banner p {
-  color: var(--parrafos);
-  font-size: var(--font_texto);
-}
-
-.banner h1 {
-  color: var(--secundario);
-  font-size: 4rem;
-  font-weight: 400;
-  margin: 0;
-  padding-top: 1rem;
-  margin-bottom: 2rem;
-}
-
-.banner h1 span {
-  color: var(--primario);
-  font-weight: 600;
+  padding: 0 5rem;
+  text-align: start;
 }
 
 .banner hr {
-  width: 18rem;
+  width: 35rem;
   border: 0.1rem solid var(--parrafos);
-  margin: 1.5rem auto;
-}
-
-.banner h2 {
-  color: var(--parrafos);
-  font-weight: 400;
-  font-size: 1.6rem;
-  padding-bottom: 2rem;
-}
-
-.text {
-  margin-bottom: 2rem;
-  font-weight: 400;
+  margin: 1.5rem 0;
 }
 
 .buttons {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-weight: 500;
+  flex-direction: row;
 }
 
 .buttons .btn-two {
-  margin: 0 3rem;
-  margin-bottom: 1rem;
+  order: 2;
+  margin: 0;
+  margin-bottom: 0;
   padding: 1.5rem 2.5rem;
-  border-radius: 5rem;
-  font-size: 1.4rem;
-  color: var(--parrafos);
-  border: 0.2rem solid var(--primario);
-  background-color: var(--primario);
+  height: 5rem;
+  font-size: var(--font_texto);
 }
 
 .buttons .btn-one {
-  margin: 0 3rem;
-  margin-bottom: 6rem;
-  padding: 1.5rem 2.5rem;
-  border-radius: 5rem;
-  font-size: 1.7rem;
-  color: var(--secundario);
-  border: 0.2rem solid var(--secundario);
-  background-color: var(--fondoBotones);
+  order: 1;
+  margin: 0;
+  margin-right: 2rem;
+  margin-bottom: 0;
+  font-size: var(--font_texto);
 }
