@@ -29,8 +29,8 @@ html {
 /* HEADER STYLES */
 .logo_container p {
   display: flex;
-  font-size: 2rem;
-  width: 50%;
+  font-size: 2.4rem;
+  width: 30%;
 }
 
 .inner_header {
@@ -54,13 +54,16 @@ html {
 .navigation {
   position: static;
   margin-top: 0rem;
-  width: 50%;
+  width: 70%;
 }
 
 .navigation li a {
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 1rem;
+  flex-direction: row;
+  position: relative;
+  left: 5rem;
 }
 
 .toggle {
