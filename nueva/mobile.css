@@ -61,14 +61,14 @@ html {
 }
 
 .navigation {
+  background-color: var(--oscuro);
+  width: 100%;
+  margin-top: 6rem;
   position: fixed;
   top: 0%;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
-  margin-top: 6rem;
-  width: 100%;
-  background-color: var(--oscuro);
+  text-align: center;
   transition: left 0.3s;
 }
 
