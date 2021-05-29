@@ -222,71 +222,64 @@ html {
 }
 
 /* SERVICES STYLES */
-.services {
-  text-align: center;
-  padding: 5rem 0;
+.service_section {
+  background-image: url(/assets/services.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 3rem;
 }
 
-.services_content {
+.service_content {
   background-color: var(--fondo2);
-  margin: 0 3rem;
-  border-radius: 0.5rem;
-}
-
-.images_services {
-  padding-top: 1rem;
-  padding-bottom: 4rem;
-}
-
-.images_services img {
-  max-width: 100%;
-  object-fit: cover;
   width: 100%;
-  margin: 1rem 0;
+  padding: 4.6rem;
+  box-shadow: 3px 3px 30px 5px rgba(0, 0, 0, 0.25);
   border-radius: 0.4rem;
 }
 
-.services_text p {
-  padding: 1rem;
-  padding-top: 3rem;
-  color: black;
-  font-size: var(--font_texto);
+.service_text {
+  text-align: center;
 }
 
-.services_text h3 {
-  font-size: 2rem;
+.service_text h3 {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.service_text h2 {
+  font-size: 1.8rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
-.services_text hr {
-  margin: 0 auto;
-  width: 73%;
-  border: 0.1rem solid black;
+.service_text hr {
+  margin-bottom: 2rem;
+  border: 1px solid black;
 }
 
-#servicios1,
-#servicios2,
-#servicios3 {
-  height: 16rem;
-  padding: 0 4rem;
+.service_products {
+  width: 100%;
 }
 
-#servicios4,
-#servicios5 {
+.service_products figure img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 3px 3px 30px 5px rgba(0, 0, 0, 0.25);
+}
+
+#img3 {
+  margin-bottom: 0;
+}
+
+#img4,
+#img5 {
   display: none;
 }
-
-.services_image {
-  background: url(../assets/services.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Estas lineas de código hay que revisarlas a la hora de hacer para desktop y tablet. */
-/* 
-.services_display {
-  display: none;
-} */
 
 /* CONTACT SECTION */
 .contact {
