@@ -14,38 +14,38 @@
 /* HEADER STYLES */
 .logo_container p {
   display: flex;
-  font-size: 2.4rem;
   width: 30%;
+  font-size: 2.4rem;
 }
 
 .inner_header {
+  height: 60px;
+  padding: 0 50px;
   justify-content: space-between;
-  padding: 0 5rem;
-  height: 6rem;
 }
 
 .inner_header li {
   display: inline-block;
-  margin-top: 0rem;
+  margin-top: 0;
 }
 
 .inner_header li:last-child {
-  padding-bottom: 0rem;
+  padding-bottom: 0;
 }
 
 .navigation {
   position: static;
-  margin-top: 0rem;
   width: 70%;
+  margin-top: 0;
 }
 
 .navigation li a {
-  color: #fff;
-  font-size: 1.2rem;
-  padding: 1rem;
-  flex-direction: row;
   position: relative;
-  left: 5rem;
+  left: 50px;
+  padding: 10px;
+  font-size: 1.2rem;
+  flex-direction: row;
+  color: #fff;
 }
 
 .toggle {
@@ -54,13 +54,13 @@
 
 /* BANNER STYLES */
 .banner {
-  padding: 0 5rem;
+  padding: 0 50px;
   text-align: start;
 }
 
 .banner hr {
-  width: 35rem;
-  margin: 1.5rem 0;
+  width: 350px;
+  margin: 15px 0;
 }
 
 .buttons {
@@ -69,24 +69,24 @@
 
 .buttons .btn-two {
   order: 2;
+  height: 50px;
   margin: 0;
   margin-bottom: 0;
-  height: 5rem;
   font-size: var(--font_texto);
 }
 
 .buttons .btn-one {
   order: 1;
   margin: 0;
-  margin-right: 2rem;
+  margin-right: 20px;
   margin-bottom: 0;
   font-size: var(--font_texto);
 }
 
 /* ABOUT STYLES */
 .about_section {
-  height: 35.5rem;
-  padding: 5rem;
+  height: 360px;
+  padding: 50px;
 }
 
 .about_container2 {
@@ -94,36 +94,36 @@
 }
 
 .about_img img {
-  height: 24.4rem;
-  width: 38.6rem;
-  border-radius: 0.4rem;
+  height: 250px;
+  width: 390px;
+  border-radius: 4px;
 }
 
 .about_text {
-  width: 32.9rem;
-  height: 19.5rem;
-  margin: 1rem;
   position: absolute;
-  right: 5rem;
-  border-radius: 0.4rem;
+  right: 50px;
+  width: 330px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 4px;
   text-align: start;
 }
 
 /* SERVICE STYLES */
 .service_section {
-  height: 40rem;
-  object-fit: cover;
+  height: 400px;
   padding: 0;
+  object-fit: cover;
 }
 
 .service_content {
-  height: 19.5rem;
-  width: 52.9rem;
-  margin: 0 5rem;
-  padding-top: 2rem;
-  padding-left: 5.7rem;
+  height: 195px;
+  width: 529px;
+  margin: 0 50px;
+  padding-top: 20px;
+  padding-left: 57px;
   position: relative;
-  top: 3.7rem;
+  top: 37px;
 }
 
 .service_text {
@@ -131,19 +131,19 @@
 }
 
 .service_text hr {
-  margin-bottom: 1rem;
-  width: 25rem;
+  width: 250px;
+  margin-bottom: 10px;
 }
 
 .service_products {
   display: flex;
-  padding-top: 1.6rem;
+  padding-top: 16px;
 }
 
 .service_products figure img {
-  height: 22rem;
-  width: 19.2rem;
-  margin-right: 1.6rem;
+  height: 220px;
+  width: 192px;
+  margin-right: 16px;
 }
 
 #img3 {
