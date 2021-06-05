@@ -282,7 +282,7 @@ html {
 }
 
 /* CONTACT SECTION */
-.contact {
+/* .contact {
   padding: 50px 3px;
   text-align: center;
 }
@@ -332,7 +332,7 @@ html {
   margin-top: 20px;
   border-radius: 4px;
   box-shadow: 5px 3px 30px 5px var(--sombra);
-}
+} */
 
 /* FOOTER */
 .footer {
