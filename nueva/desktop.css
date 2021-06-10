@@ -12,14 +12,39 @@
 }
 
 /* HEADER STYLES */
-.inner_header {
-  height: 60px;
+.header__content {
   padding: 0 100px;
 }
-.logo_container p {
-  font-size: 2.5rem;
-}
-.navigation li a {
+.header__nav a {
   font-size: 1.4rem;
+}
+
+/* BANNER STYLES */
+.banner {
+  padding: 100px;
   width: 100%;
+}
+.banner__content p {
+  font-size: 1.6rem;
+}
+.banner__content h1 {
+  font-size: 4.5rem;
+}
+.banner__content hr {
+  width: 400px;
+  border: 1px solid #e3e3e3;
+}
+.banner__content h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.banner__content .text {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+.btn-one {
+  width: 150px;
+}
+.btn-two {
+  width: 236px;
 }
