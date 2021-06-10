@@ -71,6 +71,7 @@
 
 .about_container2 {
   display: flex;
+  position: relative;
 }
 
 .about_img img {
