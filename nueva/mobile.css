@@ -27,63 +27,31 @@ html {
 }
 
 /* HEADER STYLES */
-.logo_container p {
+.header__content {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding: 0 30px;
+  line-height: 60px;
+  position: fixed;
+  justify-content: space-between;
+  background-color: var(--oscuro);
+}
+.header__title {
   font-size: 2.5rem;
   font-weight: 400;
-  letter-spacing: 0.15rem;
+  text-transform: uppercase;
   color: var(--secundario);
 }
-
-.logo_container p span {
+.header__title span {
   font-weight: 600;
   color: var(--primario);
 }
-
-.inner_header {
-  position: fixed;
-  width: 100%;
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--oscuro);
+.header__nav {
+  display: none;
 }
-
-.inner_header li {
-  margin-top: 30px;
-  padding: 0;
-  font-size: 1.6rem;
-  color: #fff;
-}
-
-.inner_header li:last-child {
-  padding-bottom: 30px;
-}
-
-.navigation {
-  position: fixed;
-  top: 0%;
-  width: 100%;
-  margin-top: 60px;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-color: var(--oscuro);
-  transition: left 0.3s;
-}
-
-.nav_hidden {
-  display: inline-block;
-  top: 100%;
-}
-
-.toggle {
-  display: flex;
-  font-size: 2.5rem;
-  color: var(--fondo2);
-  background: none;
-  border: none;
-  cursor: pointer;
+.header__button {
+  line-height: 70px;
 }
 
 /* BANNER STYLES */

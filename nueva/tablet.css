@@ -12,43 +12,23 @@
 }
 
 /* HEADER STYLES */
-.logo_container p {
-  display: flex;
-  width: 30%;
-  font-size: 2.4rem;
-}
-
-.inner_header {
-  height: 60px;
+.header__content {
   padding: 0 50px;
+}
+.header__nav {
+  display: inline-block;
+  width: 50%;
+  font-size: 1.2rem;
   justify-content: space-between;
 }
-
-.inner_header li {
-  display: inline-block;
-  margin-top: 0;
+.header__nav ul {
+  display: flex;
+  justify-content: space-between;
 }
-
-.inner_header li:last-child {
-  padding-bottom: 0;
+.header__nav a {
+  color: white;
 }
-
-.navigation {
-  position: static;
-  width: 50%;
-  margin-top: 0;
-}
-
-.navigation li a {
-  position: relative;
-  left: 50px;
-  padding: 10px;
-  font-size: 1.2rem;
-  flex-direction: row;
-  color: #fff;
-}
-
-.toggle {
+.header__button {
   display: none;
 }
 
